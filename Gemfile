@@ -17,7 +17,6 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "sassc-rails"
 gem "image_processing", "~> 1.2"
-gem 'figaro', '~> 1.2'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -35,4 +34,8 @@ group :development do
   gem 'terminal-notifier', '~> 2.0'
   gem 'terminal-notifier-guard', '~> 1.7'
   gem 'listen', '~> 3.7', '>= 3.7.1'
+end
+
+group :test do
+  gem 'simplecov', '~> 0.21.2', require: false
 end
