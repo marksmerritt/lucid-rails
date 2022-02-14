@@ -1,6 +1,17 @@
 language: ruby
 rvm:
   - 3.0.0
+cache:
+  bundler: true
+  yarn: true
+  directories:
+    - node_modules
+install:
+  - bundle install
+  - nvm install node
+  - node -v
+  - npm -i -g yarn
+  - yarn install
 script:
   - bundle exec rake db:create
   - bundle exec rake db:migrate
