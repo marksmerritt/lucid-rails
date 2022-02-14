@@ -14,8 +14,8 @@ gem "jbuilder"
 gem "redis", "~> 4.0"
 gem "bcrypt", "~> 3.1.7"
 gem "bootsnap", require: false
-gem "sassc-rails"
 gem "image_processing", "~> 1.2"
+gem 'cssbundling-rails', '~> 1.0'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
